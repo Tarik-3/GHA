@@ -22,6 +22,35 @@ jobs:
             - name: Checkout the repo
               uses: actions/checkout@v3
             - run: ls
-          
+    Test:
+        runs-on: self-hosted
+        steps:
+            - name: Checkout the repo
+              uses: actions/checkout@v3
+            - run: ls
+    Deploy:
+        runs-on: self-hosted
+        steps:
+            - name: Checkout the repo
+              uses: actions/checkout@v3
+            - run: mkdir tarik
+    checkout2:
+        runs-on: self-hosted
+        steps:
+            - name: Checkout the repo
+              uses: actions/checkout@v3
+            - run: ls
+    Test2:
+        runs-on: self-hosted
+        steps:
+            - name: Checkout the repo
+              uses: actions/checkout@v3
+            - run: ls
+    Deploy2:
+        runs-on: self-hosted
+        steps:
+            - name: Checkout the repo
+              uses: actions/checkout@v3
+            - run: mkdir tarik
               
               
