@@ -18,6 +18,8 @@ jobs:
               name: Starting
     checkout:
         runs-on: ubuntu-22.04
+        needs: build
+        environment: dev
         steps:
             - name: Checkout the repo
               uses: actions/checkout@v3
