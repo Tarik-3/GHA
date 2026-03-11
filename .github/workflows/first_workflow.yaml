@@ -23,6 +23,7 @@ jobs:
               uses: actions/checkout@v3
             - run: ls
     Test:
+        if: github.ref == 'refs/heads/dev'
         needs: build
         environment: dev
         runs-on: self-hosted
