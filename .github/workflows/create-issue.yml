@@ -10,6 +10,8 @@ on:
         required: true
 jobs:
   create-issue:
+    permissions: 
+      issues: write
     runs-on: ubuntu-22.04
     steps:
       - name: Send the issue by REST API
