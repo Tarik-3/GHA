@@ -21,4 +21,11 @@ jobs:
         pip install pyinstaller
         pyinstaller --onefile main.py
         ls
+
+    - name: Get the exec file
+      uses: actions/upload-artifact@v3
+      with:
+        name: my_exec_file
+        path: dist
+          
       
