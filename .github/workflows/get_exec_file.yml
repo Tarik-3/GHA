@@ -1,4 +1,4 @@
-name: Python Package using Conda
+name: Get The Artifact
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
         ls
 
     - name: Get the exec file
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v7
       with:
         name: my_exec_file
         path: dist
